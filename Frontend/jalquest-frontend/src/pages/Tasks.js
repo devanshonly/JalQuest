@@ -60,7 +60,7 @@ const Tasks = () => {
       </p>
       <div style={styles.taskList}>
         {tasks.length === 0 ? (
-          <p>No tasks available. Add some!</p>
+          <p>Initialising Backend.Please wait...</p>
         ) : (
           tasks.map((task) => (
             <div key={task.id} style={styles.taskCard}>
