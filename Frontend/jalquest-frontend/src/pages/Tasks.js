@@ -52,7 +52,9 @@ const Tasks = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>Today's Tasks</h1>
+      <h1 style={styles.heading}>
+        Today's Tasks <span style={styles.tag}>Ongoing Development</span>
+      </h1>
       <p style={styles.description}>
         Complete these tasks to earn Boonds and contribute to water conservation!
       </p>
@@ -111,6 +113,21 @@ const styles = {
     fontSize: "16px",
     color: "#555",
     marginBottom: "20px",
+  },
+  tag: {
+    background: "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)",
+    color: "#fff",
+    fontSize: "14px",
+    fontWeight: "600",
+    padding: "6px 14px",
+    borderRadius: "20px",
+    marginLeft: "12px",
+    verticalAlign: "middle",
+    boxShadow: "0 4px 12px rgba(37, 117, 252, 0.6)",
+    textTransform: "uppercase",
+    letterSpacing: "1.2px",
+    transition: "transform 0.3s ease",
+    cursor: "default",
   },
   taskList: {
     display: "flex",
