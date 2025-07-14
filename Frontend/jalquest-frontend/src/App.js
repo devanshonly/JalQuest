@@ -5,6 +5,8 @@ import Tasks from "./pages/Tasks";
 import Leaderboard from "./pages/Leaderboard";
 import Redeem from "./pages/Redeem";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/redeem" element={<Redeem />} />
+        <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
