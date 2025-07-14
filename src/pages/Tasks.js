@@ -8,6 +8,7 @@ const Tasks = () => {
   const fetchTasks = async () => {
     try {
       const response = await api.get("/tasks"); // GET request
+      console.log("Fetched tasks: ", response.data);//show in console
       setTasks(response.data);
     } catch (error) {
       console.error("Error fetching tasks:", error);
